@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhortatio Logo Concepts v3 — Precise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --void: #050506;
+            --deep: #0a0a0c;
+            --surface: #18181c;
+            --teal: #5ec4c4;
+            --teal-dark: #2a8a8a;
+            --amber: #d4a574;
+            --amber-dark: #b8895a;
+            --text: #f0f0f2;
+            --text-muted: #8a8a94;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Outfit', system-ui, sans-serif;
+            background: var(--void);
+            color: var(--text);
+            padding: 3rem 2rem;
+            line-height: 1.6;
+        }
+
+        .header {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-weight: 300;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: var(--amber);
+            margin: 4rem 0 2rem;
+            text-align: center;
+            letter-spacing: 0.05em;
+        }
+
+        .concepts {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            gap: 2rem;
+        }
+
+        .concept {
+            background: var(--deep);
+            border: 1px solid rgba(94, 196, 196, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .concept__header {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid rgba(94, 196, 196, 0.1);
+        }
+
+        .concept__number {
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            color: var(--teal);
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+        }
+
+        .concept__title {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 0.25rem;
+        }
+
+        .concept__description {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .concept__preview {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .preview {
+            padding: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 180px;
+        }
+
+        .preview--dark { background: var(--void); }
+        .preview--light { background: #f5f5f7; }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .wordmark {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            text-transform: lowercase;
+        }
+
+        .preview--dark .wordmark { color: var(--text); }
+        .preview--light .wordmark { color: var(--void); }
+
+        .symbol { width: 44px; height: 38px; }
+        .symbol-spiral { width: 44px; height: 44px; }
+
+        @media (max-width: 768px) {
+            .concept__preview { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Logo Concepts v3 — Precise Geometry</h1>
+        <p>Using your exact triangle symbol + mathematically correct golden spiral. Sans-serif wordmark throughout.</p>
+    </header>
+
+    <h2 class="section-title">Your Exact Triangle Symbol</h2>
+
+    <div class="concepts">
+
+        <!-- EXACT TRIANGLE - Teal -->
+        <div class="concept">
+            <div class="concept__header">
+                <p class="concept__number">Triangle A</p>
+                <h2 class="concept__title">Original Symbol — Exact Path — Teal</h2>
+                <p class="concept__description">Your symbol extracted precisely from the SVG. Outer triangle, diagonal line from apex, and the angular path at bottom.</p>
+            </div>
+            <div class="concept__preview">
+                <div class="preview preview--dark">
+                    <div class="logo">
+                        <svg class="symbol" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M103.7 90.8 L3.5 90.9 L28 48.3 L53.6 4 L79.2 48.3 L103.7 90.8 Z M103.7 90.8 L40.1 27.2 M16.9 67.7 L39.9 90.7 L71.9 58.7"
+                                  fill="none" stroke="#5ec4c4" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="wordmark">adhortatio</span>
+                    </div>
+                </div>
+                <div class="preview preview--light">
+                    <div class="logo">
+                        <svg class="symbol" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M103.7 90.8 L3.5 90.9 L28 48.3 L53.6 4 L79.2 48.3 L103.7 90.8 Z M103.7 90.8 L40.1 27.2 M16.9 67.7 L39.9 90.7 L71.9 58.7"
+                                  fill="none" stroke="#2a8a8a" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="wordmark">adhortatio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXACT TRIANGLE - Two-tone -->
+        <div class="concept">
+            <div class="concept__header">
+                <p class="concept__number">Triangle B</p>
+                <h2 class="concept__title">Original Symbol — Two-Tone (Teal + Amber)</h2>
+                <p class="concept__description">Angular path highlighted in amber to create visual hierarchy and connect to the warmth in the jellyfish imagery.</p>
+            </div>
+            <div class="concept__preview">
+                <div class="preview preview--dark">
+                    <div class="logo">
+                        <svg class="symbol" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Outer triangle + diagonal -->
+                            <path d="M103.7 90.8 L3.5 90.9 L28 48.3 L53.6 4 L79.2 48.3 L103.7 90.8 Z"
+                                  fill="none" stroke="#5ec4c4" stroke-width="4" stroke-miterlimit="10" stroke-linejoin="round"/>
+                            <path d="M103.7 90.8 L40.1 27.2"
+                                  fill="none" stroke="#5ec4c4" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <!-- Angular path in amber -->
+                            <path d="M16.9 67.7 L39.9 90.7 L71.9 58.7"
+                                  fill="none" stroke="#d4a574" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="wordmark">adhortatio</span>
+                    </div>
+                </div>
+                <div class="preview preview--light">
+                    <div class="logo">
+                        <svg class="symbol" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M103.7 90.8 L3.5 90.9 L28 48.3 L53.6 4 L79.2 48.3 L103.7 90.8 Z"
+                                  fill="none" stroke="#2a8a8a" stroke-width="4" stroke-miterlimit="10" stroke-linejoin="round"/>
+                            <path d="M103.7 90.8 L40.1 27.2"
+                                  fill="none" stroke="#2a8a8a" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M16.9 67.7 L39.9 90.7 L71.9 58.7"
+                                  fill="none" stroke="#b8895a" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="wordmark">adhortatio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Golden Spiral — Mathematically Precise</h2>
+    <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 2rem;">φ (phi) = 1.618033988749895 — Each rectangle subdivides by this ratio</p>
+
+    <div class="concepts">
+
+        <!-- GOLDEN SPIRAL - With rectangles - PRECISE -->
+        <div class="concept">
+            <div class="concept__header">
+                <p class="concept__number">Spiral A</p>
+                <h2 class="concept__title">Golden Spiral with Rectangles — Precise</h2>
+                <p class="concept__description">Mathematically accurate. Starting from 100×61.8 golden rectangle, each subdivision follows φ exactly: 61.8 → 38.2 → 23.6 → 14.6 → 9.0 → 5.6 → 3.4</p>
+            </div>
+            <div class="concept__preview">
+                <div class="preview preview--dark">
+                    <div class="logo">
+                        <svg class="symbol-spiral" viewBox="0 0 100 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Golden rectangles: 100/φ = 61.8, 61.8/φ = 38.2, etc. -->
+                            <!-- Outer rectangle 100 × 61.8 -->
+                            <rect x="0" y="0" width="100" height="61.8" stroke="#5ec4c4" stroke-width="0.5" fill="none" opacity="0.25"/>
+                            <!-- First square 61.8 × 61.8 -->
+                            <rect x="0" y="0" width="61.8" height="61.8" stroke="#5ec4c4" stroke-width="0.5" fill="none" opacity="0.25"/>
+                            <!-- Next rectangle/square 38.2 × 38.2 -->
+                            <rect x="61.8" y="0" width="38.2" height="38.2" stroke="#5ec4c4" stroke-width="0.5" fill="none" opacity="0.25"/>
+                            <!-- 23.6 × 23.6 -->
+                            <rect x="61.8" y="38.2" width="23.6" height="23.6" stroke="#5ec4c4" stroke-width="0.5" fill="none" opacity="0.25"/>
+                            <!-- 14.6 × 14.6 -->
+                            <rect x="70.8" y="38.2" width="14.6" height="14.6" stroke="#5ec4c4" stroke-width="0.5" fill="none" opacity="0.25"/>
+                            <!-- 9.0 × 9.0 -->
+                            <rect x="70.8" y="43.8" width="9.0" height="9.0" stroke="#5ec4c4" stroke-width="0.5" fill="none" opacity="0.25"/>
+
+                            <!-- Golden spiral as quarter-circle arcs -->
+                            <!-- Arc 1: radius 61.8, center at (61.8, 61.8), from 180° to 270° -->
+                            <path d="M 0 61.8 A 61.8 61.8 0 0 1 61.8 0" stroke="#5ec4c4" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <!-- Arc 2: radius 38.2, center at (61.8, 38.2), from 270° to 360° -->
+                            <path d="M 61.8 0 A 38.2 38.2 0 0 1 100 38.2" stroke="#5ec4c4" stroke-width="2" fill="none"/>
+                            <!-- Arc 3: radius 23.6, center at (85.4, 38.2), from 0° to 90° -->
+                            <path d="M 100 38.2 A 23.6 23.6 0 0 1 85.4 61.8" stroke="#5ec4c4" stroke-width="2" fill="none"/>
+                            <!-- Arc 4: radius 14.6, center at (85.4, 52.8), from 90° to 180° -->
+                            <path d="M 85.4 61.8 A 14.6 14.6 0 0 1 70.8 52.8" stroke="#5ec4c4" stroke-width="2" fill="none"/>
+                            <!-- Arc 5: radius 9.0, center at (79.8, 52.8), from 180° to 270° -->
+                            <path d="M 70.8 52.8 A 9.0 9.0 0 0 1 79.8 43.8" stroke="#5ec4c4" stroke-width="2" fill="none"/>
+                            <!-- Arc 6: radius 5.6 -->
+                            <path d="M 79.8 43.8 A 5.6 5.6 0 0 1 85.4 49.4" stroke="#5ec4c4" stroke-width="2" fill="none"/>
+
+                            <!-- Center point -->
+                            <circle cx="82" cy="48" r="2" fill="#d4a574"/>
+                        </svg>
+                        <span class="wordmark">adhortatio</span>
+                    </div>
+                </div>
+                <div class="preview preview--light">
+                    <div class="logo">
+                        <svg class="symbol-spiral" viewBox="0 0 100 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="0" width="100" height="61.8" stroke="#2a8a8a" stroke-width="0.5" fill="none" opacity="0.25"/>
+                            <rect x="0" y="0" width="61.8" height="61.8" stroke="#2a8a8a" stroke-width="0.5" fill="none" opacity="0.25"/>
+                            <rect x="61.8" y="0" width="38.2" height="38.2" stroke="#2a8a8a" stroke-width="0.5" fill="none" opacity="0.25"/>
+                            <rect x="61.8" y="38.2" width="23.6" height="23.6" stroke="#2a8a8a" stroke-width="0.5" fill="none" opacity="0.25"/>
+                            <rect x="70.8" y="38.2" width="14.6" height="14.6" stroke="#2a8a8a" stroke-width="0.5" fill="none" opacity="0.25"/>
+                            <rect x="70.8" y="43.8" width="9.0" height="9.0" stroke="#2a8a8a" stroke-width="0.5" fill="none" opacity="0.25"/>
+
+                            <path d="M 0 61.8 A 61.8 61.8 0 0 1 61.8 0" stroke="#2a8a8a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <path d="M 61.8 0 A 38.2 38.2 0 0 1 100 38.2" stroke="#2a8a8a" stroke-width="2" fill="none"/>
+                            <path d="M 100 38.2 A 23.6 23.6 0 0 1 85.4 61.8" stroke="#2a8a8a" stroke-width="2" fill="none"/>
+                            <path d="M 85.4 61.8 A 14.6 14.6 0 0 1 70.8 52.8" stroke="#2a8a8a" stroke-width="2" fill="none"/>
+                            <path d="M 70.8 52.8 A 9.0 9.0 0 0 1 79.8 43.8" stroke="#2a8a8a" stroke-width="2" fill="none"/>
+                            <path d="M 79.8 43.8 A 5.6 5.6 0 0 1 85.4 49.4" stroke="#2a8a8a" stroke-width="2" fill="none"/>
+
+                            <circle cx="82" cy="48" r="2" fill="#b8895a"/>
+                        </svg>
+                        <span class="wordmark">adhortatio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GOLDEN SPIRAL - Just spiral -->
+        <div class="concept">
+            <div class="concept__header">
+                <p class="concept__number">Spiral B</p>
+                <h2 class="concept__title">Golden Spiral — Clean (No Rectangles)</h2>
+                <p class="concept__description">Same mathematically precise spiral, without the construction lines. Cleaner for use as a logo mark.</p>
+            </div>
+            <div class="concept__preview">
+                <div class="preview preview--dark">
+                    <div class="logo">
+                        <svg class="symbol-spiral" viewBox="0 0 100 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 0 61.8 A 61.8 61.8 0 0 1 61.8 0" stroke="#5ec4c4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            <path d="M 61.8 0 A 38.2 38.2 0 0 1 100 38.2" stroke="#5ec4c4" stroke-width="2.5" fill="none"/>
+                            <path d="M 100 38.2 A 23.6 23.6 0 0 1 85.4 61.8" stroke="#5ec4c4" stroke-width="2.5" fill="none"/>
+                            <path d="M 85.4 61.8 A 14.6 14.6 0 0 1 70.8 52.8" stroke="#5ec4c4" stroke-width="2.5" fill="none"/>
+                            <path d="M 70.8 52.8 A 9.0 9.0 0 0 1 79.8 43.8" stroke="#5ec4c4" stroke-width="2.5" fill="none"/>
+                            <path d="M 79.8 43.8 A 5.6 5.6 0 0 1 85.4 49.4" stroke="#5ec4c4" stroke-width="2.5" fill="none"/>
+                            <circle cx="82" cy="48" r="2.5" fill="#d4a574"/>
+                        </svg>
+                        <span class="wordmark">adhortatio</span>
+                    </div>
+                </div>
+                <div class="preview preview--light">
+                    <div class="logo">
+                        <svg class="symbol-spiral" viewBox="0 0 100 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 0 61.8 A 61.8 61.8 0 0 1 61.8 0" stroke="#2a8a8a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            <path d="M 61.8 0 A 38.2 38.2 0 0 1 100 38.2" stroke="#2a8a8a" stroke-width="2.5" fill="none"/>
+                            <path d="M 100 38.2 A 23.6 23.6 0 0 1 85.4 61.8" stroke="#2a8a8a" stroke-width="2.5" fill="none"/>
+                            <path d="M 85.4 61.8 A 14.6 14.6 0 0 1 70.8 52.8" stroke="#2a8a8a" stroke-width="2.5" fill="none"/>
+                            <path d="M 70.8 52.8 A 9.0 9.0 0 0 1 79.8 43.8" stroke="#2a8a8a" stroke-width="2.5" fill="none"/>
+                            <path d="M 79.8 43.8 A 5.6 5.6 0 0 1 85.4 49.4" stroke="#2a8a8a" stroke-width="2.5" fill="none"/>
+                            <circle cx="82" cy="48" r="2.5" fill="#b8895a"/>
+                        </svg>
+                        <span class="wordmark">adhortatio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GOLDEN SPIRAL - No dot -->
+        <div class="concept">
+            <div class="concept__header">
+                <p class="concept__number">Spiral C</p>
+                <h2 class="concept__title">Golden Spiral — Minimal (No Center Dot)</h2>
+                <p class="concept__description">Pure form. Just the mathematical curve, nothing else.</p>
+            </div>
+            <div class="concept__preview">
+                <div class="preview preview--dark">
+                    <div class="logo">
+                        <svg class="symbol-spiral" viewBox="0 0 100 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 0 61.8 A 61.8 61.8 0 0 1 61.8 0 A 38.2 38.2 0 0 1 100 38.2 A 23.6 23.6 0 0 1 85.4 61.8 A 14.6 14.6 0 0 1 70.8 52.8 A 9.0 9.0 0 0 1 79.8 43.8 A 5.6 5.6 0 0 1 85.4 49.4 A 3.4 3.4 0 0 1 82 52.8"
+                                  stroke="#5ec4c4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        </svg>
+                        <span class="wordmark">adhortatio</span>
+                    </div>
+                </div>
+                <div class="preview preview--light">
+                    <div class="logo">
+                        <svg class="symbol-spiral" viewBox="0 0 100 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 0 61.8 A 61.8 61.8 0 0 1 61.8 0 A 38.2 38.2 0 0 1 100 38.2 A 23.6 23.6 0 0 1 85.4 61.8 A 14.6 14.6 0 0 1 70.8 52.8 A 9.0 9.0 0 0 1 79.8 43.8 A 5.6 5.6 0 0 1 85.4 49.4 A 3.4 3.4 0 0 1 82 52.8"
+                                  stroke="#2a8a8a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        </svg>
+                        <span class="wordmark">adhortatio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Side by Side Comparison</h2>
+
+    <div class="concepts">
+        <div class="concept">
+            <div class="concept__header">
+                <p class="concept__number">Comparison</p>
+                <h2 class="concept__title">Triangle vs Spiral — Which Symbol?</h2>
+                <p class="concept__description">Both are mathematically grounded. Triangle: established, structural, progress. Spiral: nature, growth, infinite.</p>
+            </div>
+            <div class="concept__preview">
+                <div class="preview preview--dark">
+                    <div class="logo">
+                        <svg class="symbol" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M103.7 90.8 L3.5 90.9 L28 48.3 L53.6 4 L79.2 48.3 L103.7 90.8 Z"
+                                  fill="none" stroke="#5ec4c4" stroke-width="4" stroke-miterlimit="10" stroke-linejoin="round"/>
+                            <path d="M103.7 90.8 L40.1 27.2"
+                                  fill="none" stroke="#5ec4c4" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M16.9 67.7 L39.9 90.7 L71.9 58.7"
+                                  fill="none" stroke="#d4a574" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="wordmark">adhortatio</span>
+                    </div>
+                </div>
+                <div class="preview preview--dark">
+                    <div class="logo">
+                        <svg class="symbol-spiral" viewBox="0 0 100 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 0 61.8 A 61.8 61.8 0 0 1 61.8 0 A 38.2 38.2 0 0 1 100 38.2 A 23.6 23.6 0 0 1 85.4 61.8 A 14.6 14.6 0 0 1 70.8 52.8 A 9.0 9.0 0 0 1 79.8 43.8 A 5.6 5.6 0 0 1 85.4 49.4 A 3.4 3.4 0 0 1 82 52.8"
+                                  stroke="#5ec4c4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            <circle cx="82" cy="48" r="2.5" fill="#d4a574"/>
+                        </svg>
+                        <span class="wordmark">adhortatio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="max-width: 700px; margin: 4rem auto 0; padding: 2rem; background: var(--surface); border-radius: 4px;">
+        <h2 style="font-weight: 400; font-size: 1.1rem; margin-bottom: 1rem; color: var(--amber);">What do you think?</h2>
+        <ul style="list-style: none; color: var(--text-muted); font-size: 0.85rem;">
+            <li style="padding: 0.4rem 0;">→ Does the triangle look correct now?</li>
+            <li style="padding: 0.4rem 0;">→ Is the golden spiral accurate enough?</li>
+            <li style="padding: 0.4rem 0;">→ Triangle or spiral — which feels more "you"?</li>
+            <li style="padding: 0.4rem 0;">→ Do you want to try combining them?</li>
+        </ul>
+    </div>
+
+</body>
+</html>

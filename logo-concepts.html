@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhortatio Logo Concepts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Outfit:wght@300;400;500&family=DM+Serif+Display&family=Instrument+Serif&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --void: #050506;
+            --deep: #0a0a0c;
+            --surface: #18181c;
+            --teal: #5ec4c4;
+            --teal-muted: #3d9a9a;
+            --amber: #d4a574;
+            --text: #f0f0f2;
+            --text-muted: #8a8a94;
+            --text-dim: #5a5a64;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', system-ui, sans-serif;
+            background: var(--void);
+            color: var(--text);
+            padding: 3rem 2rem;
+            line-height: 1.6;
+        }
+
+        .header {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .concepts {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            gap: 3rem;
+        }
+
+        .concept {
+            background: var(--deep);
+            border: 1px solid rgba(94, 196, 196, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .concept__header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid rgba(94, 196, 196, 0.1);
+        }
+
+        .concept__number {
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            color: var(--teal);
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .concept__title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .concept__description {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .concept__preview {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .preview {
+            padding: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+        }
+
+        .preview--dark {
+            background: var(--void);
+        }
+
+        .preview--light {
+            background: #f5f5f7;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo--stacked {
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        /* ==========================================
+           CONCEPT 1: Pure Wordmark - Elegant Serif
+        ========================================== */
+
+        .wordmark-serif {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            color: var(--text);
+        }
+
+        .preview--light .wordmark-serif {
+            color: var(--void);
+        }
+
+        /* ==========================================
+           CONCEPT 2: Wordmark + Golden Spiral
+        ========================================== */
+
+        .wordmark-outfit {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            text-transform: lowercase;
+        }
+
+        .preview--dark .wordmark-outfit {
+            color: var(--text);
+        }
+
+        .preview--light .wordmark-outfit {
+            color: var(--void);
+        }
+
+        .spiral-symbol {
+            width: 44px;
+            height: 44px;
+        }
+
+        /* ==========================================
+           CONCEPT 3: Geometric Jellyfish
+        ========================================== */
+
+        .jellyfish-geo {
+            width: 48px;
+            height: 48px;
+        }
+
+        /* ==========================================
+           CONCEPT 4: Mathematical / Sacred Geometry
+        ========================================== */
+
+        .sacred-symbol {
+            width: 50px;
+            height: 50px;
+        }
+
+        .wordmark-instrument {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+        }
+
+        .preview--dark .wordmark-instrument {
+            color: var(--text);
+        }
+
+        .preview--light .wordmark-instrument {
+            color: var(--void);
+        }
+
+        /* ==========================================
+           CONCEPT 5: Infinity / Cycle
+        ========================================== */
+
+        .infinity-symbol {
+            width: 52px;
+            height: 32px;
+        }
+
+        /* ==========================================
+           CONCEPT 6: Minimalist Tentacles
+        ========================================== */
+
+        .tentacle-symbol {
+            width: 40px;
+            height: 48px;
+        }
+
+        .wordmark-dm {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+        }
+
+        .preview--dark .wordmark-dm {
+            color: var(--text);
+        }
+
+        .preview--light .wordmark-dm {
+            color: var(--void);
+        }
+
+        /* ==========================================
+           NOTES SECTION
+        ========================================== */
+
+        .notes {
+            max-width: 800px;
+            margin: 4rem auto 0;
+            padding: 2rem;
+            background: var(--surface);
+            border-radius: 4px;
+        }
+
+        .notes h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--amber);
+        }
+
+        .notes ul {
+            list-style: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .notes li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .notes li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--teal);
+        }
+
+        @media (max-width: 768px) {
+            .concept__preview {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Logo Concepts</h1>
+        <p>Six directions exploring typography, geometry, and symbolism. All shown on dark and light backgrounds.</p>
+    </header>
+
+    <div class="concepts">
+
+        <!-- CONCEPT 1: Pure Wordmark -->
+        <div class="concept">
+            <div class="concept__header">
+                <p class="concept__number">Concept 01</p>
+                <h2 class="concept__title">Pure Wordmark — Elegant Serif</h2>
+                <p class="concept__description">The name alone, set in Cormorant Garamond. Timeless, confident, lets the word speak for itself. "Adhortatio" (Latin: encouragement/exhortation) becomes the entire identity.</p>
+            </div>
+            <div class="concept__preview">
+                <div class="preview preview--dark">
+                    <span class="wordmark-serif">adhortatio</span>
+                </div>
+                <div class="preview preview--light">
+                    <span class="wordmark-serif">adhortatio</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONCEPT 2: Golden Spiral -->
+        <div class="concept">
+            <div class="concept__header">
+                <p class="concept__number">Concept 02</p>
+                <h2 class="concept__title">Golden Spiral — Math in Nature</h2>
+                <p class="concept__description">The Fibonacci spiral: mathematics made visible in nautilus shells, galaxies, and growth patterns. Nature's proof that math underlies everything. Clean sans-serif wordmark.</p>
+            </div>
+            <div class="concept__preview">
+                <div class="preview preview--dark">
+                    <div class="logo">
+                        <svg class="spiral-symbol" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 95 C25 95 5 75 5 50 C5 25 25 5 50 5 C68 5 83 17 88 34" stroke="#5ec4c4" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M88 34 C92 45 88 58 78 66 C68 74 54 74 44 66" stroke="#5ec4c4" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M44 66 C36 60 34 49 38 40 C42 31 52 27 62 30" stroke="#5ec4c4" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M62 30 C69 33 73 40 71 48 C69 55 62 60 54 58" stroke="#5ec4c4" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M54 58 C49 57 45 52 46 47 C47 42 52 39 57 40" stroke="#5ec4c4" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <circle cx="57" cy="46" r="3" fill="#d4a574"/>
+                        </svg>
+                        <span class="wordmark-outfit">adhortatio</span>
+                    </div>
+                </div>
+                <div class="preview preview--light">
+                    <div class="logo">
+                        <svg class="spiral-symbol" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 95 C25 95 5 75 5 50 C5 25 25 5 50 5 C68 5 83 17 88 34" stroke="#3d9a9a" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M88 34 C92 45 88 58 78 66 C68 74 54 74 44 66" stroke="#3d9a9a" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M44 66 C36 60 34 49 38 40 C42 31 52 27 62 30" stroke="#3d9a9a" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M62 30 C69 33 73 40 71 48 C69 55 62 60 54 58" stroke="#3d9a9a" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M54 58 C49 57 45 52 46 47 C47 42 52 39 57 40" stroke="#3d9a9a" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <circle cx="57" cy="46" r="3" fill="#c4956a"/>
+                        </svg>
+                        <span class="wordmark-outfit">adhortatio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONCEPT 3: Geometric Jellyfish -->
+        <div class="concept">
+            <div class="concept__header">
+                <p class="concept__number">Concept 03</p>
+                <h2 class="concept__title">Geometric Jellyfish</h2>
+                <p class="concept__description">The Turritopsis abstracted into pure geometry: a dome and radiating lines. Recognizable yet refined. The warm center represents the spark of life/intelligence.</p>
+            </div>
+            <div class="concept__preview">
+                <div class="preview preview--dark">
+                    <div class="logo">
+                        <svg class="jellyfish-geo" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Bell/dome -->
+                            <path d="M15 50 Q15 15 50 15 Q85 15 85 50" stroke="#5ec4c4" stroke-width="2" fill="none"/>
+                            <!-- Inner structure -->
+                            <ellipse cx="50" cy="38" rx="12" ry="10" fill="#d4a574" opacity="0.8"/>
+                            <!-- Tentacles -->
+                            <line x1="20" y1="50" x2="8" y2="95" stroke="#5ec4c4" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="32" y1="50" x2="25" y2="100" stroke="#5ec4c4" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="44" y1="50" x2="42" y2="105" stroke="#5ec4c4" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="56" y1="50" x2="58" y2="105" stroke="#5ec4c4" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="68" y1="50" x2="75" y2="100" stroke="#5ec4c4" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="80" y1="50" x2="92" y2="95" stroke="#5ec4c4" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="wordmark-serif">adhortatio</span>
+                    </div>
+                </div>
+                <div class="preview preview--light">
+                    <div class="logo">
+                        <svg class="jellyfish-geo" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 50 Q15 15 50 15 Q85 15 85 50" stroke="#3d9a9a" stroke-width="2" fill="none"/>
+                            <ellipse cx="50" cy="38" rx="12" ry="10" fill="#c4956a" opacity="0.8"/>
+                            <line x1="20" y1="50" x2="8" y2="95" stroke="#3d9a9a" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="32" y1="50" x2="25" y2="100" stroke="#3d9a9a" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="44" y1="50" x2="42" y2="105" stroke="#3d9a9a" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="56" y1="50" x2="58" y2="105" stroke="#3d9a9a" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="68" y1="50" x2="75" y2="100" stroke="#3d9a9a" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="80" y1="50" x2="92" y2="95" stroke="#3d9a9a" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="wordmark-serif">adhortatio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONCEPT 4: Sacred Geometry -->
+        <div class="concept">
+            <div class="concept__header">
+                <p class="concept__number">Concept 04</p>
+                <h2 class="concept__title">Sacred Geometry — Seed of Life</h2>
+                <p class="concept__description">Overlapping circles forming the Seed of Life pattern. Ancient geometry found in nature, art, and mathematics across all cultures. Math = Life = Nature = Math.</p>
+            </div>
+            <div class="concept__preview">
+                <div class="preview preview--dark">
+                    <div class="logo">
+                        <svg class="sacred-symbol" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Center circle -->
+                            <circle cx="50" cy="50" r="20" stroke="#5ec4c4" stroke-width="1.5" fill="none"/>
+                            <!-- Surrounding circles -->
+                            <circle cx="50" cy="30" r="20" stroke="#5ec4c4" stroke-width="1.5" fill="none"/>
+                            <circle cx="67.3" cy="40" r="20" stroke="#5ec4c4" stroke-width="1.5" fill="none"/>
+                            <circle cx="67.3" cy="60" r="20" stroke="#5ec4c4" stroke-width="1.5" fill="none"/>
+                            <circle cx="50" cy="70" r="20" stroke="#5ec4c4" stroke-width="1.5" fill="none"/>
+                            <circle cx="32.7" cy="60" r="20" stroke="#5ec4c4" stroke-width="1.5" fill="none"/>
+                            <circle cx="32.7" cy="40" r="20" stroke="#5ec4c4" stroke-width="1.5" fill="none"/>
+                            <!-- Center dot -->
+                            <circle cx="50" cy="50" r="4" fill="#d4a574"/>
+                        </svg>
+                        <span class="wordmark-instrument">adhortatio</span>
+                    </div>
+                </div>
+                <div class="preview preview--light">
+                    <div class="logo">
+                        <svg class="sacred-symbol" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="20" stroke="#3d9a9a" stroke-width="1.5" fill="none"/>
+                            <circle cx="50" cy="30" r="20" stroke="#3d9a9a" stroke-width="1.5" fill="none"/>
+                            <circle cx="67.3" cy="40" r="20" stroke="#3d9a9a" stroke-width="1.5" fill="none"/>
+                            <circle cx="67.3" cy="60" r="20" stroke="#3d9a9a" stroke-width="1.5" fill="none"/>
+                            <circle cx="50" cy="70" r="20" stroke="#3d9a9a" stroke-width="1.5" fill="none"/>
+                            <circle cx="32.7" cy="60" r="20" stroke="#3d9a9a" stroke-width="1.5" fill="none"/>
+                            <circle cx="32.7" cy="40" r="20" stroke="#3d9a9a" stroke-width="1.5" fill="none"/>
+                            <circle cx="50" cy="50" r="4" fill="#c4956a"/>
+                        </svg>
+                        <span class="wordmark-instrument">adhortatio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONCEPT 5: Infinity / Möbius -->
+        <div class="concept">
+            <div class="concept__header">
+                <p class="concept__number">Concept 05</p>
+                <h2 class="concept__title">Infinite Loop — Longevity Symbol</h2>
+                <p class="concept__description">A stylized infinity/cycle symbol representing the jellyfish's ability to restart its life cycle. Continuous transformation, eternal renewal. Direct nod to the longevity mission.</p>
+            </div>
+            <div class="concept__preview">
+                <div class="preview preview--dark">
+                    <div class="logo">
+                        <svg class="infinity-symbol" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 30 C30 15 15 10 10 25 C5 40 20 50 35 35 L85 15 C95 5 115 15 110 30 C105 45 85 45 75 35 L30 30" stroke="#5ec4c4" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <circle cx="60" cy="30" r="4" fill="#d4a574"/>
+                        </svg>
+                        <span class="wordmark-outfit">adhortatio</span>
+                    </div>
+                </div>
+                <div class="preview preview--light">
+                    <div class="logo">
+                        <svg class="infinity-symbol" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 30 C30 15 15 10 10 25 C5 40 20 50 35 35 L85 15 C95 5 115 15 110 30 C105 45 85 45 75 35 L30 30" stroke="#3d9a9a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <circle cx="60" cy="30" r="4" fill="#c4956a"/>
+                        </svg>
+                        <span class="wordmark-outfit">adhortatio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONCEPT 6: Minimalist Tentacles / Radiating Lines -->
+        <div class="concept">
+            <div class="concept__header">
+                <p class="concept__number">Concept 06</p>
+                <h2 class="concept__title">Radiating Lines — Minimal Abstraction</h2>
+                <p class="concept__description">Extreme minimalism: just the essence of the jellyfish tentacles as radiating lines from a central point. Could represent innovation spreading outward, or ideas taking form.</p>
+            </div>
+            <div class="concept__preview">
+                <div class="preview preview--dark">
+                    <div class="logo">
+                        <svg class="tentacle-symbol" viewBox="0 0 80 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Central point -->
+                            <circle cx="40" cy="20" r="6" fill="#d4a574"/>
+                            <!-- Radiating lines -->
+                            <line x1="40" y1="26" x2="10" y2="90" stroke="#5ec4c4" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="40" y1="26" x2="25" y2="95" stroke="#5ec4c4" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="40" y1="26" x2="40" y2="98" stroke="#5ec4c4" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="40" y1="26" x2="55" y2="95" stroke="#5ec4c4" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="40" y1="26" x2="70" y2="90" stroke="#5ec4c4" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="wordmark-dm">adhortatio</span>
+                    </div>
+                </div>
+                <div class="preview preview--light">
+                    <div class="logo">
+                        <svg class="tentacle-symbol" viewBox="0 0 80 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="20" r="6" fill="#c4956a"/>
+                            <line x1="40" y1="26" x2="10" y2="90" stroke="#3d9a9a" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="40" y1="26" x2="25" y2="95" stroke="#3d9a9a" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="40" y1="26" x2="40" y2="98" stroke="#3d9a9a" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="40" y1="26" x2="55" y2="95" stroke="#3d9a9a" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="40" y1="26" x2="70" y2="90" stroke="#3d9a9a" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="wordmark-dm">adhortatio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="notes">
+        <h2>Notes & Next Steps</h2>
+        <ul>
+            <li>These are starting points — any element can be refined, combined, or taken in a new direction</li>
+            <li>The typography can be swapped between concepts (e.g., use the sacred geometry symbol with the serif wordmark)</li>
+            <li>Colors shown are from the website palette but can be adjusted</li>
+            <li>Once we pick a direction, I'll create proper SVG files in multiple formats</li>
+            <li>Tell me what resonates, what doesn't, and we'll iterate from there</li>
+        </ul>
+    </div>
+
+</body>
+</html>
