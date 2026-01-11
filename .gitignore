@@ -17,11 +17,11 @@
 Thumbs.db
 
 # Brand assets not needed for website
-Huisstijl/_archief/
-Huisstijl/Templates/
-Huisstijl/Font/
-Huisstijl/LogoAI/
+Brand/_archief/
+Brand/Templates/
+Brand/Font/
+Brand/LogoAI/
 
 # Keep only what the site uses:
-# - Huisstijl/Turritopsis.jpeg.webp
-# - Huisstijl/static/
+# - Brand/Turritopsis.jpeg.webp
+# - Brand/static/

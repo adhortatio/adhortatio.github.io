@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a **brand assets repository** for Adhortatio BV (Dutch business consultancy). It contains corporate identity materials ("Huisstijl") rather than software code. There is no build system, package manager, or code to compile.
+This is a **brand assets repository** for Adhortatio BV (Dutch business consultancy). It contains corporate identity materials ("Brand") rather than software code. There is no build system, package manager, or code to compile.
 
 ## Repository Structure
 
 ```
-Huisstijl/
+Brand/
 ├── Font/              # Brand fonts (Nexa, Titillium Web, Source Sans Pro)
 ├── LogoAI/            # Logo files and brand specification documents
 ├── static/            # Web-ready assets (favicons, web fonts)
@@ -20,16 +20,16 @@ Huisstijl/
 
 ## Key Assets
 
-**Primary Logo Files** (in `Huisstijl/LogoAI/`):
+**Primary Logo Files** (in `Brand/LogoAI/`):
 - `adhortatio Main Logo.svg` - Full logo with slogan
 - `adhortatio Without Slogan.svg` - Logo without slogan
 - `adhortatio Logo Symbol.svg` - Icon/symbol only
 
-**Web Fonts** (in `Huisstijl/static/fonts/`):
+**Web Fonts** (in `Brand/static/fonts/`):
 - `Nexa-Bold.woff2`
 - `Nexa-Light.woff2`
 
-**Favicons** (in `Huisstijl/static/`):
+**Favicons** (in `Brand/static/`):
 - Standard set: favicon.ico, favicon-16x16.png, favicon-32x32.png
 - Mobile: apple-touch-icon.png, android-chrome-192x192.png, android-chrome-512x512.png
 

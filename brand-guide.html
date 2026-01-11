@@ -956,18 +956,17 @@
         <div class="container">
             <p class="section-number">06</p>
             <h2 class="section-title">Favicon</h2>
-            <p class="section-intro">The favicon uses the symbol with a dark background baked in, ensuring visibility on both light and dark browser tabs.</p>
+            <p class="section-intro">The favicon uses a transparent background with dark color variants (#2a8a8a teal, #b8895a amber), ensuring visibility on both light and dark browser tabs.</p>
 
             <div class="logo-display">
                 <div class="logo-box logo-box--dark" style="aspect-ratio: 1;">
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
                         <svg style="width: 64px; height: 64px;" viewBox="0 0 120 120" fill="none">
-                            <rect x="0" y="0" width="120" height="120" fill="#050506"/>
                             <g transform="translate(6.5, 13.5)">
                                 <path d="M103.7 90.8 L3.5 90.9 L28 48.3 L53.6 4 L79.2 48.3 L103.7 90.8 Z"
-                                      fill="none" stroke="#5ec4c4" stroke-width="4" stroke-linejoin="round"/>
+                                      fill="none" stroke="#2a8a8a" stroke-width="4" stroke-linejoin="round"/>
                                 <g transform="translate(24.32, 54.61) scale(0.5856)">
-                                    <g stroke="#5ec4c4" opacity="0.6">
+                                    <g stroke="#2a8a8a" opacity="0.6">
                                         <line x1="0" y1="0" x2="100" y2="0" stroke-width="6.83"/>
                                         <line x1="0" y1="0" x2="0" y2="61.8" stroke-width="6.83"/>
                                         <line x1="100" y1="0" x2="100" y2="61.8" stroke-width="6.83"/>
@@ -981,22 +980,21 @@
                                         <line x1="70.8" y1="43.8" x2="79.8" y2="43.8" stroke-width="2.2"/>
                                     </g>
                                     <path d="M 0 61.8 A 61.8 61.8 0 0 1 61.8 0 A 38.2 38.2 0 0 1 100 38.2 A 23.6 23.6 0 0 1 85.4 61.8 A 14.6 14.6 0 0 1 70.8 52.8 A 9.0 9.0 0 0 1 79.8 43.8 A 5.6 5.6 0 0 1 85.4 49.4"
-                                          stroke="#d4a574" stroke-width="6.83" fill="none" stroke-linecap="round"/>
+                                          stroke="#b8895a" stroke-width="6.83" fill="none" stroke-linecap="round"/>
                                 </g>
                             </g>
                         </svg>
-                        <span style="font-size: 0.7rem; color: var(--text-dim);">64 × 64</span>
+                        <span style="font-size: 0.7rem; color: var(--text-dim);">64 × 64 (on dark)</span>
                     </div>
                 </div>
                 <div class="logo-box logo-box--light" style="aspect-ratio: 1;">
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
                         <svg style="width: 64px; height: 64px;" viewBox="0 0 120 120" fill="none">
-                            <rect x="0" y="0" width="120" height="120" fill="#050506"/>
                             <g transform="translate(6.5, 13.5)">
                                 <path d="M103.7 90.8 L3.5 90.9 L28 48.3 L53.6 4 L79.2 48.3 L103.7 90.8 Z"
-                                      fill="none" stroke="#5ec4c4" stroke-width="4" stroke-linejoin="round"/>
+                                      fill="none" stroke="#2a8a8a" stroke-width="4" stroke-linejoin="round"/>
                                 <g transform="translate(24.32, 54.61) scale(0.5856)">
-                                    <g stroke="#5ec4c4" opacity="0.6">
+                                    <g stroke="#2a8a8a" opacity="0.6">
                                         <line x1="0" y1="0" x2="100" y2="0" stroke-width="6.83"/>
                                         <line x1="0" y1="0" x2="0" y2="61.8" stroke-width="6.83"/>
                                         <line x1="100" y1="0" x2="100" y2="61.8" stroke-width="6.83"/>
@@ -1010,11 +1008,11 @@
                                         <line x1="70.8" y1="43.8" x2="79.8" y2="43.8" stroke-width="2.2"/>
                                     </g>
                                     <path d="M 0 61.8 A 61.8 61.8 0 0 1 61.8 0 A 38.2 38.2 0 0 1 100 38.2 A 23.6 23.6 0 0 1 85.4 61.8 A 14.6 14.6 0 0 1 70.8 52.8 A 9.0 9.0 0 0 1 79.8 43.8 A 5.6 5.6 0 0 1 85.4 49.4"
-                                          stroke="#d4a574" stroke-width="6.83" fill="none" stroke-linecap="round"/>
+                                          stroke="#b8895a" stroke-width="6.83" fill="none" stroke-linecap="round"/>
                                 </g>
                             </g>
                         </svg>
-                        <span style="font-size: 0.7rem; color: #666;">Works on light tabs too</span>
+                        <span style="font-size: 0.7rem; color: #666;">64 × 64 (on light)</span>
                     </div>
                 </div>
             </div>
@@ -1053,7 +1051,7 @@
             <ul class="anatomy__list" style="margin-top: 1rem;">
                 <li class="anatomy__item">
                     <p class="anatomy__label">Background</p>
-                    <p class="anatomy__desc">Always use the void color (#050506) as a baked-in background. This ensures the favicon is visible on both light and dark browser tabs.</p>
+                    <p class="anatomy__desc">Transparent background with dark color variants: teal-dark (#2a8a8a) and amber-dark (#b8895a). This ensures visibility on both light and dark browser tabs.</p>
                 </li>
                 <li class="anatomy__item">
                     <p class="anatomy__label">Shape</p>
@@ -1064,8 +1062,8 @@
                     <p class="anatomy__desc">Must be a single continuous path (no gaps between arc segments). All 6 golden ratio arcs connected.</p>
                 </li>
                 <li class="anatomy__item">
-                    <p class="anatomy__label">Dark Mode</p>
-                    <p class="anatomy__desc">No separate dark mode favicon needed. The baked-in dark background works universally.</p>
+                    <p class="anatomy__label">Colors</p>
+                    <p class="anatomy__desc">Uses darker variants of the brand colors for contrast on any background. Triangle and scaffolding use #2a8a8a, spiral uses #b8895a.</p>
                 </li>
             </ul>
         </div>
