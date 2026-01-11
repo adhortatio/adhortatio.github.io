@@ -4,35 +4,43 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a **brand assets repository** for Adhortatio BV (Dutch business consultancy). It contains corporate identity materials ("Brand") rather than software code. There is no build system, package manager, or code to compile.
+This is the **website repository** for Adhortatio BV, a Dutch holding company focused on AI & Longevity investments. The site is hosted on GitHub Pages at https://adhortatio.nl.
 
 ## Repository Structure
 
 ```
-Brand/
-├── Font/              # Brand fonts (Nexa, Titillium Web, Source Sans Pro)
-├── LogoAI/            # Logo files and brand specification documents
-├── static/            # Web-ready assets (favicons, web fonts)
-│   └── fonts/         # WOFF2 fonts: Nexa-Bold, Nexa-Light
-├── Templates/         # Invoice and document templates
-└── _archief/          # Archived previous brand iteration
+├── index.html          # Main website (single-page)
+├── brand-guide.html    # Brand guidelines documentation
+├── CNAME               # Custom domain configuration
+└── Brand/
+    ├── Turritopsis.jpeg.webp   # Hero image (immortal jellyfish)
+    ├── static/                  # Favicons and web manifest
+    │   ├── favicon.svg          # Primary favicon (transparent, dark colors)
+    │   ├── favicon-16x16.png
+    │   ├── favicon-32x32.png
+    │   ├── apple-touch-icon.png
+    │   ├── android-chrome-*.png
+    │   └── site.webmanifest
+    ├── _archief/               # Archived materials (gitignored)
+    ├── Templates/              # Invoice templates (gitignored)
+    ├── Font/                   # Source fonts (gitignored)
+    └── LogoAI/                 # Old logo files (gitignored)
 ```
 
-## Key Assets
+## Key Information
 
-**Primary Logo Files** (in `Brand/LogoAI/`):
-- `adhortatio Main Logo.svg` - Full logo with slogan
-- `adhortatio Without Slogan.svg` - Logo without slogan
-- `adhortatio Logo Symbol.svg` - Icon/symbol only
+**Logo**: The hybrid logo combines a triangle shell with a golden ratio spiral inside. Colors are teal (#5ec4c4) and amber (#d4a574). The favicon uses darker variants (#2a8a8a, #b8895a) for visibility on any background.
 
-**Web Fonts** (in `Brand/static/fonts/`):
-- `Nexa-Bold.woff2`
-- `Nexa-Light.woff2`
+**Typography**:
+- Display: Cormorant Garamond (Google Fonts)
+- Body: Outfit (Google Fonts)
 
-**Favicons** (in `Brand/static/`):
-- Standard set: favicon.ico, favicon-16x16.png, favicon-32x32.png
-- Mobile: apple-touch-icon.png, android-chrome-192x192.png, android-chrome-512x512.png
+**Colors**:
+- Void (background): #050506
+- Teal: #5ec4c4
+- Amber: #d4a574
+- Text: #f5f5f5
 
-## Permissions
+## Development
 
-This repository is configured for read-only access. See `.claude/settings.local.json` for the allowed operations (ls, find, tree, file commands only).
+No build system - static HTML/CSS. Edit files directly and push to deploy via GitHub Pages.
