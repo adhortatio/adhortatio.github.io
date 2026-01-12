@@ -10,9 +10,10 @@ This is the **website repository** for Adhortatio BV, a Dutch holding company fo
 
 ```
 ├── index.html          # Main website (single-page)
-├── brand-guide.html    # Brand guidelines documentation
+├── robots.txt          # Search engine directives
 ├── CNAME               # Custom domain configuration
 └── Brand/
+    ├── brand-guide.html        # Brand guidelines (local only, gitignored)
     ├── Turritopsis.jpeg.webp   # Hero image (immortal jellyfish)
     ├── static/                  # Favicons and web manifest
     │   ├── favicon.svg          # Primary favicon (transparent, dark colors)
