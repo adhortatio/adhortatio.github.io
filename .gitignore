@@ -19,10 +19,10 @@ Thumbs.db
 # Brand assets not needed for website
 Brand/_archief/
 Brand/Templates/
-Brand/Font/
 Brand/LogoAI/
 Brand/brand-guide.html
 
 # Keep only what the site uses:
 # - Brand/Turritopsis.jpeg.webp
 # - Brand/static/
+*.docx
