@@ -16,13 +16,6 @@
 # Thumbnails
 Thumbs.db
 
-# Brand assets not needed for website
-Brand/_archief/
-Brand/Templates/
-Brand/LogoAI/
-Brand/brand-guide.html
-
-# Keep only what the site uses:
-# - Brand/Turritopsis.jpeg.webp
-# - Brand/static/
+# Brand assets (private, never deployed)
+Brand/
 *.docx

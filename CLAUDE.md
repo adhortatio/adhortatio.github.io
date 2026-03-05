@@ -12,22 +12,23 @@ This is the **website repository** for Adhortatio BV, a Dutch holding company fo
 ├── index.html          # Main website (single-page)
 ├── robots.txt          # Search engine directives
 ├── CNAME               # Custom domain configuration
-└── Brand/
-    ├── brand-guide.html        # Brand guidelines (local only, gitignored)
-    ├── Turritopsis.jpeg.webp   # Hero image (immortal jellyfish)
-    ├── static/
-    │   ├── fonts/              # Self-hosted web fonts (GDPR compliant)
-    │   │   ├── cormorant-garamond-variable.woff2
-    │   │   ├── cormorant-garamond-italic.woff2
-    │   │   └── outfit-variable.woff2
-    │   ├── favicon.svg         # Primary favicon (transparent, dark colors)
-    │   ├── favicon-*.png       # PNG fallbacks
-    │   ├── apple-touch-icon.png
-    │   ├── android-chrome-*.png
-    │   └── site.webmanifest
-    ├── _archief/               # Archived materials (gitignored)
-    ├── Templates/              # Invoice templates (gitignored)
-    └── LogoAI/                 # Old logo files (gitignored)
+├── assets/             # Web-serving files (committed, deployed)
+│   ├── Turritopsis.jpeg.webp   # Hero image (immortal jellyfish)
+│   ├── fonts/                  # Self-hosted web fonts (GDPR compliant)
+│   │   ├── cormorant-garamond-variable.woff2
+│   │   ├── cormorant-garamond-italic.woff2
+│   │   └── outfit-variable.woff2
+│   ├── favicon.svg             # Primary favicon (transparent, dark colors)
+│   ├── favicon-*.png           # PNG fallbacks
+│   ├── apple-touch-icon.png
+│   ├── android-chrome-*.png
+│   └── site.webmanifest
+└── Brand/              # Private brand materials (fully gitignored, never deployed)
+    ├── brand-guide.html
+    ├── design-system.md
+    ├── _archief/
+    ├── Templates/
+    └── LogoAI/
 ```
 
 ## Key Information
