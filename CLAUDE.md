@@ -35,6 +35,8 @@ This is the **website repository** for Adhortatio BV, a Dutch holding company fo
 
 **Logo**: The hybrid logo combines a triangle shell with a golden ratio spiral inside. Colors are teal (#5ec4c4) and amber (#d4a574). The favicon uses darker variants (#2a8a8a, #b8895a) for visibility on any background.
 
+**Motto**: "Scito quid velis; ne minori cede." (Know what you want; don't settle for less.) — displayed in the symbol circle on the about section.
+
 **Typography** (self-hosted, GDPR compliant):
 - Display: Cormorant Garamond (variable, 300-600 weights)
 - Body: Outfit (variable, 300-500 weights)
@@ -45,6 +47,13 @@ This is the **website repository** for Adhortatio BV, a Dutch holding company fo
 - Amber: #d4a574
 - Text: #f5f5f5
 
+**Security**:
+- Content-Security-Policy via meta tag (no scripts, self-hosted resources only)
+- robots.txt disallows /assets/ from crawlers
+- Brand/ fully gitignored — never deployed
+
 ## Development
 
 No build system - static HTML/CSS. Edit files directly and push to deploy via GitHub Pages.
+
+**Owner preferences**: This is a personal investment company. No SEO needed, no social media tags, stay hidden. No KVK number on site.
