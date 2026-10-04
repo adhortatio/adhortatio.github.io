@@ -37,7 +37,7 @@ This is the **website repository** for Adhortatio BV, a Dutch holding company fo
 - *Detailed* (64px and up): full hairline grid + six arcs. Used for apple-touch and android icons.
 - *Small* (32px and below): rectangle frame + first four arcs, bolder strokes (triangle 5, spiral 9), no grid. Used for the nav logo, favicon.svg and favicon PNGs.
 
-**Motto**: "Scito quid velis; ne minori cede." (Know what you want; don't settle for less.), displayed as an epigraph above the hero title and in the symbol circle on the about section.
+**Motto**: "Scito quid velis; ne minori cede." (Know what you want; don't settle for less.), displayed only in the symbol circle on the about section (the hero title is its English translation; no second Latin line).
 
 **Typography** (self-hosted, GDPR compliant):
 - Display: Cormorant Garamond (variable, 300-600 weights)
