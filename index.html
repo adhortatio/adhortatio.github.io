@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adhortatio B.V. — Artificial Intelligence & Longevity</title>
-    <meta name="description" content="Charting new horizons in Artificial Intelligence & Longevity. Inspire. Innovate. Invest.">
+    <meta name="robots" content="noindex, nofollow">
 
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="manifest" href="assets/site.webmanifest">
     <meta name="theme-color" content="#050506">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; font-src 'self'; manifest-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; font-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
 
     <link rel="preload" href="assets/fonts/cormorant-garamond-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/cormorant-garamond-italic.woff2" as="font" type="font/woff2" crossorigin>
@@ -96,6 +96,7 @@
 
         .hero {
             min-height: 100vh;
+            min-height: 100svh;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -197,8 +198,14 @@
             transition: width 0.3s ease;
         }
 
-        .nav__link:hover::after {
+        .nav__link:hover::after,
+        .nav__link:focus-visible::after {
             width: 100%;
+        }
+
+        a:focus-visible {
+            outline: 1px solid var(--color-teal);
+            outline-offset: 6px;
         }
 
         .hero__text {
@@ -215,6 +222,28 @@
             margin-bottom: var(--space-sm);
             opacity: 0;
             animation: fadeSlideUp 1s ease-out 1.6s forwards;
+        }
+
+        .hero__motto {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+            font-family: var(--font-display);
+            font-size: clamp(1rem, 1.6vw, 1.2rem);
+            font-style: italic;
+            letter-spacing: 0.04em;
+            color: var(--color-amber);
+            margin-bottom: var(--space-sm);
+            opacity: 0;
+            animation: fadeSlideUp 1s ease-out 1.1s forwards;
+        }
+
+        .hero__motto::before {
+            content: '';
+            width: 2.5rem;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--color-amber));
+            opacity: 0.6;
         }
 
         .hero__title {
@@ -377,7 +406,9 @@
             border-radius: 50%;
             background: radial-gradient(circle at 50% 40%, rgba(212, 165, 116, 0.15), transparent 60%),
                         radial-gradient(circle at 50% 50%, rgba(94, 196, 196, 0.1), transparent 70%);
-            border: 1px solid rgba(94, 196, 196, 0.15);
+            border: 1px solid rgba(212, 165, 116, 0.25);
+            box-shadow: 0 0 60px rgba(212, 165, 116, 0.06),
+                        inset 0 0 40px rgba(94, 196, 196, 0.04);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -389,14 +420,16 @@
             position: absolute;
             inset: 20px;
             border-radius: 50%;
-            border: 1px solid rgba(94, 196, 196, 0.1);
+            border: 1px solid rgba(94, 196, 196, 0.18);
         }
 
         .symbol__text {
             font-family: var(--font-display);
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             font-style: italic;
-            color: var(--color-text-dim);
+            letter-spacing: 0.02em;
+            color: var(--color-amber);
+            text-shadow: 0 0 24px rgba(212, 165, 116, 0.25);
             text-align: center;
             line-height: 1.5;
         }
@@ -506,6 +539,7 @@
         @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after {
                 animation-duration: 0.01ms !important;
+                animation-delay: 0s !important;
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
             }
@@ -518,8 +552,12 @@
             }
 
             .symbol {
-                width: 150px;
-                height: 150px;
+                width: 170px;
+                height: 170px;
+            }
+
+            .symbol__text {
+                font-size: 1.1rem;
             }
         }
     </style>
@@ -542,7 +580,7 @@
 
         <header class="hero__header">
             <a href="/" class="logo">
-                <svg class="logo__symbol" viewBox="0 0 107 93" fill="none">
+                <svg class="logo__symbol" viewBox="0 0 107 93" fill="none" aria-hidden="true" focusable="false">
                     <path d="M103.7 90.8 L3.5 90.9 L28 48.3 L53.6 4 L79.2 48.3 L103.7 90.8 Z"
                           fill="none" stroke="var(--color-teal)" stroke-width="4" stroke-linejoin="round"/>
                     <g transform="translate(24.32, 54.61) scale(0.5856)">
@@ -576,6 +614,7 @@
 
         <div class="hero__content">
             <div class="hero__text">
+                <p class="hero__motto" lang="la">Scito quid velis; ne minori cede.</p>
                 <h1 class="hero__title">Know what you want.<br><em>Don't settle for less.</em></h1>
                 <p class="hero__descriptor">inspire · innovate · invest</p>
                 <p class="hero__focus">Charting new horizons in Artificial Intelligence & Longevity</p>
@@ -598,7 +637,7 @@
 
             <div class="about__symbol">
                 <div class="symbol">
-                    <span class="symbol__text">Scito quid velis;<br>ne minori cede.</span>
+                    <span class="symbol__text" lang="la">Scito quid velis;<br>ne minori cede.</span>
                 </div>
             </div>
 
