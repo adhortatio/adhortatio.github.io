@@ -33,7 +33,7 @@ This is the **website repository** for Adhortatio BV, a Dutch holding company fo
 
 ## Key Information
 
-**Logo**: An equilateral triangle (side ~100) with the largest inscribed golden rectangle (100 x 61.8 scaled by 0.5856, sitting on the base, top corners on the sides) and a golden spiral of quarter arcs inside it (radii 61.8, 38.2, 23.6, 14.6, 9.0, 5.6, turning clockwise: left, top, right, bottom, left, top). Colors are teal (#5ec4c4) and amber (#d4a574); on light backgrounds use the deep variants (#2a8a8a, #b8895a). Two variants:
+**Logo**: An equilateral triangle (side ~100) with the largest inscribed golden rectangle (100 x 61.8 scaled by 0.5856, sitting on the base, top corners on the sides) and a golden spiral of quarter arcs inside it (radii 61.8, 38.2, 23.6, 14.6, 9.0, 5.6, turning clockwise: left, top, right, bottom, left, top). Colors are teal (#5ec4c4) and amber (#d4a574); the favicon (any background) uses deep variants (#2a8a8a, #b8895a); light backgrounds and print use #2a8a8a with a deeper amber #a87848 (3.9:1 on white). Two variants:
 - *Detailed* (64px and up): full hairline grid + six arcs. Used for apple-touch and android icons.
 - *Small* (32px and below): rectangle frame + first four arcs, bolder strokes (triangle 5, spiral 9), no grid. Used for the nav logo, favicon.svg and favicon PNGs.
 
