@@ -33,7 +33,9 @@ This is the **website repository** for Adhortatio BV, a Dutch holding company fo
 
 ## Key Information
 
-**Logo**: The hybrid logo combines a triangle shell with a golden ratio spiral inside. Colors are teal (#5ec4c4) and amber (#d4a574). The favicon uses darker variants (#2a8a8a, #b8895a) for visibility on any background.
+**Logo**: An equilateral triangle (side ~100) with the largest inscribed golden rectangle (100 x 61.8 scaled by 0.5856, sitting on the base, top corners on the sides) and a golden spiral of quarter arcs inside it (radii 61.8, 38.2, 23.6, 14.6, 9.0, 5.6, turning clockwise: left, top, right, bottom, left, top). Colors are teal (#5ec4c4) and amber (#d4a574); on light backgrounds use the deep variants (#2a8a8a, #b8895a). Two variants:
+- *Detailed* (64px and up): full hairline grid + six arcs. Used for apple-touch and android icons.
+- *Small* (32px and below): rectangle frame + first four arcs, bolder strokes (triangle 5, spiral 9), no grid. Used for the nav logo, favicon.svg and favicon PNGs.
 
 **Motto**: "Scito quid velis; ne minori cede." (Know what you want; don't settle for less.), displayed as an epigraph above the hero title and in the symbol circle on the about section.
 
