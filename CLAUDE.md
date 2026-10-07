@@ -59,4 +59,6 @@ This is the **website repository** for Adhortatio BV, a Dutch holding company fo
 
 No build system - static HTML/CSS. Edit files directly and push to deploy via GitHub Pages.
 
+**Deploys**: every push to `main` triggers the "pages build and deployment" workflow (about a minute). Check that it went green: a failed deploy leaves the previous version live. If it failed in the deploy step on a GitHub error (e.g. `HttpError: other side closed`), re-run it; if the re-run stays queued without jobs, the next commit to `main` builds afresh.
+
 **Owner preferences**: This is a personal investment company. No SEO needed, no social media tags, stay hidden. No KVK number on site.
