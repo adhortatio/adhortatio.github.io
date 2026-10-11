@@ -23,13 +23,10 @@ This is the **website repository** for Adhortatio BV, a Dutch holding company fo
 │   ├── apple-touch-icon.png
 │   ├── android-chrome-*.png
 │   └── site.webmanifest
-└── Brand/              # Private brand materials (fully gitignored, never deployed)
-    ├── brand-guide.html
-    ├── design-system.md
-    ├── _archief/
-    ├── Templates/
-    └── LogoAI/
+└── Brand/              # Legacy local folder (gitignored, never deployed); superseded by adhortatio/brand
 ```
+
+The brand guide and design system that used to live in the local `Brand/` folder are now in `adhortatio/brand` under `guide/`. Don't add new brand material to `Brand/`.
 
 ## Key Information
 
