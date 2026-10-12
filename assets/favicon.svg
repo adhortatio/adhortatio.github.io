@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.4 -7.55 110 110" fill="none">
+<g transform="translate(24.32, 54.61) scale(0.5856)"><g stroke="#2a8a8a" opacity="0.7"><line x1="0" y1="0" x2="100" y2="0" stroke-width="6.83"/><line x1="0" y1="0" x2="0" y2="61.8" stroke-width="6.83"/><line x1="100" y1="0" x2="100" y2="61.8" stroke-width="6.83"/></g></g>
 <path d="M103.7 90.8 L3.5 90.9 L28 48.3 L53.6 4 L79.2 48.3 L103.7 90.8 Z" stroke="#2a8a8a" stroke-width="5" stroke-linejoin="round"/>
-<g transform="translate(24.32, 54.61) scale(0.5856)">
-<g stroke="#2a8a8a" opacity="0.7"><line x1="0" y1="0" x2="100" y2="0" stroke-width="6.83"/><line x1="0" y1="0" x2="0" y2="61.8" stroke-width="6.83"/><line x1="100" y1="0" x2="100" y2="61.8" stroke-width="6.83"/></g>
-<path d="M 0 61.8 A 61.8 61.8 0 0 1 61.8 0 A 38.2 38.2 0 0 1 100 38.2 A 23.6 23.6 0 0 1 76.4 61.8 A 14.6 14.6 0 0 1 61.8 47.2" stroke="#b8895a" stroke-width="9" stroke-linecap="round"/>
-</g>
+<path transform="translate(24.32, 54.61) scale(0.5856)" d="M 0 61.8 A 61.8 61.8 0 0 1 61.8 0 A 38.2 38.2 0 0 1 100 38.2 A 23.6 23.6 0 0 1 76.4 61.8 A 14.6 14.6 0 0 1 61.8 47.2" stroke="#b8895a" stroke-width="9" stroke-linecap="round"/>
 </svg>
