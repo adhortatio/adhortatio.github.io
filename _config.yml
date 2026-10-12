@@ -1,0 +1,5 @@
+# GitHub Pages (Jekyll) build settings.
+# Keep internal files off the public site: only index.html, robots.txt,
+# CNAME and assets/ are meant to be served.
+exclude:
+  - CLAUDE.md

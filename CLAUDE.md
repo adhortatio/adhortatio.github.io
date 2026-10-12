@@ -12,6 +12,7 @@ This is the **website repository** for Adhortatio BV, a Dutch holding company fo
 ├── index.html          # Main website (single-page)
 ├── robots.txt          # Search engine directives
 ├── CNAME               # Custom domain configuration
+├── _config.yml         # GitHub Pages build: excludes CLAUDE.md from the public site
 ├── assets/             # Web-serving files (committed, deployed)
 │   ├── Turritopsis.jpeg.webp   # Hero image (immortal jellyfish)
 │   ├── fonts/                  # Self-hosted web fonts (GDPR compliant)
@@ -54,6 +55,7 @@ The brand guide, design system and the complete huisstijl (stationery, templates
 - robots.txt disallows /assets/ from crawlers
 - `<meta name="robots" content="noindex, nofollow">` keeps the page out of search results (robots.txt must keep allowing `/` so crawlers can see it)
 - Brand/ fully gitignored, never deployed
+- `_config.yml` excludes CLAUDE.md from the published site; add any new internal file (notes, READMEs) to its `exclude` list
 
 ## Development
 
