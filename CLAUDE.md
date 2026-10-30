@@ -12,7 +12,8 @@ This is the **website repository** for Adhortatio BV, a Dutch holding company fo
 ├── index.html          # Main website (single-page)
 ├── robots.txt          # Search engine directives
 ├── CNAME               # Custom domain configuration
-├── _config.yml         # GitHub Pages build: excludes CLAUDE.md from the public site
+├── _config.yml         # GitHub Pages build: excludes CLAUDE.md, docs/ and GLOSSARY.md from the public site
+├── docs/agents/        # Configuration for the engineering skills (see Agent skills)
 ├── assets/             # Web-serving files (committed, deployed)
 │   ├── Turritopsis.jpeg.webp   # Hero image (immortal jellyfish)
 │   ├── fonts/                  # Self-hosted web fonts (GDPR compliant)
@@ -64,3 +65,17 @@ No build system - static HTML/CSS. Edit files directly and push to deploy via Gi
 **Deploys**: every push to `main` triggers the "pages build and deployment" workflow (about a minute). Check that it went green: a failed deploy leaves the previous version live. If it failed in the deploy step on a GitHub error (e.g. `HttpError: other side closed`), re-run it; if the re-run stays queued without jobs, the next commit to `main` builds afresh.
 
 **Owner preferences**: This is a personal investment company. No SEO needed, no social media tags, stay hidden. No KVK number on site.
+
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues in the private `adhortatio/brand` repo, labelled `website` (this repo is public, so its own Issues stay unused). See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+The five default labels (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `GLOSSARY.md` and `docs/adr/` at the repo root, created when needed. See `docs/agents/domain.md`.

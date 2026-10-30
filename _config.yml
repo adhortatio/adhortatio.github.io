@@ -3,3 +3,5 @@
 # CNAME and assets/ are meant to be served.
 exclude:
   - CLAUDE.md
+  - docs
+  - GLOSSARY.md
