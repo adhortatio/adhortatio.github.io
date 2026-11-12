@@ -15,7 +15,8 @@ This is the **website repository** for Adhortatio BV, a Dutch holding company fo
 ├── _config.yml         # GitHub Pages build: excludes CLAUDE.md, docs/ and GLOSSARY.md from the public site
 ├── docs/agents/        # Configuration for the engineering skills (see Agent skills)
 ├── assets/             # Web-serving files (committed, deployed)
-│   ├── Turritopsis.jpeg.webp   # Hero image (immortal jellyfish)
+│   ├── Turritopsis.jpeg.webp   # Hero image (immortal jellyfish): first paint and reduced-motion version
+│   ├── turritopsis-loop.webm/.mp4  # Hero loop, the jellyfish floating (from adhortatio/brand)
 │   ├── fonts/                  # Self-hosted web fonts (GDPR compliant)
 │   │   ├── cormorant-garamond-variable.woff2
 │   │   ├── cormorant-garamond-italic.woff2
@@ -33,7 +34,7 @@ The brand guide, design system and the complete huisstijl (stationery, templates
 
 ## Key Information
 
-**Brand source of truth**: the private repo [`adhortatio/brand`](https://github.com/adhortatio/brand) holds the logo files, fonts, colour tokens and the generators. `assets/` icons and fonts here are copies from it: change the brand there first, then copy `logo/web/*` and `fonts/*.woff2` into `assets/`, and `digital/email-signature/adhortatio-lockup.png` into `assets/email/`. Sent emails link to `https://adhortatio.nl/assets/email/adhortatio-lockup.png`, so that path must stay.
+**Brand source of truth**: the private repo [`adhortatio/brand`](https://github.com/adhortatio/brand) holds the logo files, fonts, colour tokens and the generators. `assets/` icons and fonts here are copies from it: change the brand there first, then copy `logo/web/*` and `fonts/*.woff2` into `assets/`, `photo/turritopsis-loop.*` into `assets/`, and `digital/email-signature/adhortatio-lockup.png` into `assets/email/`. Sent emails link to `https://adhortatio.nl/assets/email/adhortatio-lockup.png`, so that path must stay.
 
 **Logo**: An equilateral triangle (side ~100) with the largest inscribed golden rectangle (100 x 61.8 scaled by 0.5856, sitting on the base, top corners on the sides) and a golden spiral of quarter arcs inside it (radii 61.8, 38.2, 23.6, 14.6, 9.0, 5.6, turning clockwise: left, top, right, bottom, left, top). Colors are teal (#5ec4c4) and amber (#d4a574); the favicon (any background) uses deep variants (#2a8a8a, #b8895a); light backgrounds and print use #2a8a8a with a deeper amber #a87848 (3.9:1 on white). Two variants:
 - *Detailed* (mark 64 px or 12 mm tall and up): full hairline grid + six arcs. Used for apple-touch and android icons.
@@ -52,7 +53,7 @@ The brand guide, design system and the complete huisstijl (stationery, templates
 - Text: #f0f0f2
 
 **Security**:
-- Content-Security-Policy via meta tag (no scripts, self-hosted resources only)
+- Content-Security-Policy via meta tag (no scripts, self-hosted resources only; `media-src 'self'` for the hero loop)
 - robots.txt disallows /assets/ from crawlers
 - `<meta name="robots" content="noindex, nofollow">` keeps the page out of search results (robots.txt must keep allowing `/` so crawlers can see it)
 - Brand/ fully gitignored, never deployed
