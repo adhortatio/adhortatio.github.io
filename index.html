@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="manifest" href="assets/site.webmanifest">
     <meta name="theme-color" content="#050506">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; font-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; media-src 'self'; font-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
 
     <link rel="preload" href="assets/fonts/cormorant-garamond-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/cormorant-garamond-italic.woff2" as="font" type="font/woff2" crossorigin>
@@ -110,6 +110,19 @@
         }
 
         .hero__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 40%;
+            opacity: 0;
+            animation: fadeIn 2s ease-out 0.3s forwards;
+        }
+
+        /* The jellyfish floating: a seamless loop over the still, which stays
+           the first paint and the version for reduced motion. */
+        .hero__video {
+            position: absolute;
+            inset: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -501,7 +514,8 @@
         }
 
         @media (min-width: 1024px) {
-            .hero__image {
+            .hero__image,
+            .hero__video {
                 object-position: center center;
             }
 
@@ -522,6 +536,7 @@
                 transition-duration: 0.01ms !important;
             }
             html { scroll-behavior: auto; }
+            .hero__video { display: none; }
         }
 
         @media (max-width: 480px) {
@@ -553,6 +568,10 @@
                 height="3189"
                 fetchpriority="high"
             >
+            <video class="hero__video" autoplay muted loop playsinline disablepictureinpicture preload="auto" aria-hidden="true">
+                <source src="assets/turritopsis-loop.webm" type="video/webm">
+                <source src="assets/turritopsis-loop.mp4" type="video/mp4">
+            </video>
             <div class="hero__gradient"></div>
         </div>
 
